@@ -107,5 +107,4 @@ En desarrollo.
 
 # Autores
 
-Agostini, Emiliano
-Cortesse, Agustín
+Agostini, Emiliano y Cortesse, Agustín
