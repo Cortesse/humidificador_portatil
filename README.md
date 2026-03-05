@@ -1,47 +1,110 @@
-# Sistema Humidificador Compacto
+# Humidificador Ultrasónico Portátil
 
-Este repositorio contiene archivos, código fuente y documentación relacionados con distintos proyectos de desarrollo y electrónica.
+Sistema electrónico para el control de un humidificador ultrasónico portátil basado en un microcontrolador ESP32.
+El proyecto integra el diseño de hardware, firmware y documentación técnica necesaria para el funcionamiento del dispositivo.
 
-## Contenido
+El sistema permite controlar el funcionamiento del humidificador, monitorear el estado de la batería y gestionar los diferentes modos de operación del equipo.
 
-En este repositorio se almacenan distintos tipos de archivos asociados a los proyectos:
+---
 
-* Código fuente
-* Esquemas electrónicos
-* Diseños de PCB
-* Documentación técnica
-* Datasheets
-* Archivos de simulación
-* Recursos de desarrollo
+# Descripción del Proyecto
 
-## Estructura del repositorio
+Este proyecto consiste en el desarrollo de la electrónica de control para un humidificador ultrasónico alimentado por batería.
 
-Los proyectos se organizan en carpetas individuales. Cada carpeta puede contener:
+El sistema utiliza un microcontrolador **ESP32** para gestionar el funcionamiento del dispositivo, incluyendo:
+
+* Control del módulo generador de niebla (humidificador)
+* Monitoreo del nivel de batería
+* Gestión de estados de funcionamiento
+* Visualización de información en display
+* Optimización del consumo energético
+
+El dispositivo está diseñado para operar con baterías recargables y utiliza un convertidor **DC-DC boost** para elevar el voltaje cuando es necesario para el funcionamiento del sistema.
+
+---
+
+# Funcionalidades
+
+* Control del módulo humidificador
+* Medición del nivel de batería
+* Indicador de estado del sistema
+* Modos de operación (READY / RUN)
+* Conversión DC-DC para regulación de voltaje
+* Gestión eficiente del consumo de energía
+
+---
+
+# Arquitectura del Sistema
+
+El sistema se compone de los siguientes bloques principales:
+
+**Batería recargable**
+Fuente de alimentación principal del dispositivo.
+
+**Convertidor DC-DC Boost**
+Eleva el voltaje de la batería cuando es necesario para alimentar el sistema.
+
+**Microcontrolador ESP32**
+Encargado del control del sistema, lectura de sensores y gestión de los estados de funcionamiento.
+
+**Módulo Humidificador Ultrasónico**
+Genera la niebla mediante vibración ultrasónica.
+
+**Sistema de medición de batería**
+Permite monitorear el estado de carga de la batería mediante el microcontrolador.
+
+**Display / interfaz de usuario**
+Muestra información sobre el estado del sistema.
+
+---
+
+# Estructura del Repositorio
+
+Los archivos del proyecto se organizan de la siguiente manera:
 
 ```
-/nombre-del-proyecto
+/humidificador
 │
-├── firmware/        # Código fuente
-├── hardware/        # Esquemas y PCB
-├── docs/            # Documentación
+├── firmware/        # Código del ESP32
+├── hardware/        # Esquemáticos y PCB
+├── docs/            # Documentación del proyecto
 ├── datasheets/      # Hojas de datos de componentes
 └── simulations/     # Archivos de simulación
 ```
 
-## Objetivo
+---
 
-Centralizar y mantener organizados los archivos de desarrollo, facilitando el control de versiones y el acceso a la información de cada proyecto.
+# Hardware Principal
 
-## Herramientas utilizadas
+* Microcontrolador **ESP32**
+* Convertidor **DC-DC Boost**
+* Batería recargable
+* Módulo humidificador ultrasónico
+* Display de estado
+* Circuito de medición de batería
 
-Dependiendo del proyecto, pueden utilizarse herramientas como:
+---
 
-* Arduino IDE
-* KiCad / Altium / EasyEDA
-* Octave / MATLAB
+# Herramientas Utilizadas
+
+* **Arduino IDE** para el desarrollo del firmware
+* Software de diseño electrónico (KiCad / EasyEDA / similar)
 * Git para control de versiones
 
-## Autores
+---
 
-Agostini, Emiliano
-Cortesse, Agustín
+# Objetivo del Proyecto
+
+Desarrollar un sistema electrónico compacto, eficiente y confiable para el control de un humidificador ultrasónico portátil, integrando hardware y firmware en una arquitectura modular y documentada.
+
+---
+
+# Estado del Proyecto
+
+En desarrollo.
+
+---
+
+# Autor
+
+Agustín
