@@ -1,4 +1,4 @@
-| Item | Descripción 		        | Código          | Link proveedor                                    
+| Item | Descripción            | Código          | Link proveedor                                    
 | ---- | ---------------------- | --------------- | ----------------------------------------------------------------- 
 | 1    | Microcontrolador       | ESP32-C3FH4     | https://jlcpcb.com/partdetail/EspressifSystems-ESP32C3FH4/C2858491      
 | 2    | IC Conversor dc-dc	    | MT3608          | https://jlcpcb.com/partdetail/XI_AN_AerosemiTech-MT3608/C84817 
